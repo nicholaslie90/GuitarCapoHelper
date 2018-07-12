@@ -1,4 +1,4 @@
-#Readme
+# Readme
 
 This app is to help guitarist to play at the correct key when a person on their team uses a capo. Simple app that uses React Native + Redux to track states.
 

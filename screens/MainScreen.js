@@ -1,26 +1,22 @@
 import React, {Component} from 'react';
 import {Image, Platform, View} from "react-native";
+import KeysButtons from '../components/KeysButtons';
 import {STATUS_BAR_HEIGHT} from '../constants';
 
 const styles = {
     imageStyle: {
-        marginLeft: 10,
+        marginLeft: Platform.OS === 'android' ? 10 : 0,
+        marginTop: Platform.OS === 'android' ? 20 : 0,
         width: 40,
         height: 40
     }
 }
 
-function cacheImages(images){
-    return images.map(image=>{
-        if (typeof image === 'string'){
-            return Image.pretetch(image);
-        }
-
-        return
-    })
-}
-
 export default class MainScreen extends Component {
+    state = {
+        appIsReady: false
+    };
+
     static navigationOptions = () => ({
         title: 'Capo Keys',
         headerStyle: {
@@ -35,10 +31,8 @@ export default class MainScreen extends Component {
     });
 
     render() {
-        return (<View style={{flex: 1, backgroudColor: '#ddd'}}>
-            {/*Chord Modal*/}
-
-            {/*Content*/}
+        return (<View style={{flex: 1, backgroundColor: '#ddd'}}>
+            <KeysButtons />
         </View>);
     }
 }
