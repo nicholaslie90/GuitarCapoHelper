@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {AsyncStorage, Image, Platform, View} from "react-native";
+import {AsyncStorage, Image, Platform, TouchableHighlight, View} from "react-native";
 import { Divider } from 'react-native-elements';
 import KeysButtons from '../components/KeysButtons';
 import CapoButtons from '../components/CapoButtons';
@@ -20,14 +20,25 @@ class MainScreen extends Component {
     static navigationOptions = () => ({
         title: 'Capo Keys',
         headerStyle: {
-            height: Platform.OS === 'android' ? 54 + STATUS_BAR_HEIGHT : 54,
             backgroundColor: '#2196F3'
         },
         headerTitleStyle: {
-            marginTop: Platform.OS === 'android' ? STATUS_BAR_HEIGHT : 0,
             color: 'white'
         },
-        headerLeft: <Image source={require('../assets/icon-guitar.png')} style={styles.imageStyle}/>
+        headerLeft: <Image source={require('../assets/icon-guitar.png')} style={styles.imageStyle}/>,
+        headerRight: <TouchableHighlight
+        underlayColor={'#039be5'}
+            onPress={() => {console.log('pressed')}}>
+            <Image source={require('../assets/icon-settings.png')}
+                   style={{
+                       width: 30,
+                       height: 30,
+                       margin: 4,
+                       marginRight: 10,
+                       marginTop: 10,
+                       marginBottom: 12
+                   }}/>
+        </TouchableHighlight>
     });
 
     async componentWillMount() {
@@ -90,10 +101,9 @@ class MainScreen extends Component {
 
 const styles = {
     imageStyle: {
-        marginLeft: Platform.OS === 'android' ? 10 : 0,
-        marginTop: Platform.OS === 'android' ? 20 : 0,
         width: 40,
-        height: 40
+        height: 40,
+        marginLeft: 4
     },
     containerStyle: {
         flex: 1,
