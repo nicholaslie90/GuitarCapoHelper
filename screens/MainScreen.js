@@ -8,37 +8,27 @@ import {SCREEN_WIDTH, STATUS_BAR_HEIGHT} from '../constants';
 import CapoKey from '../components/CapoKey';
 import ChordsModal from "../modals/ChordsModal";
 import {makeAdMob, productIdRemoveAds} from "../utility";
+import ViewSettingsButton from "../components/ViewSettingsButton";
+import SettingsModal from "../modals/SettingsModal";
 
 const InAppBilling = require("react-native-billing");
 
 class MainScreen extends Component {
     state = {
-        appIsReady: false,
         showAds: true
     };
 
     static navigationOptions = () => ({
-        title: 'Capo Keys',
+        title: 'Guitar Capo Helper',
         headerStyle: {
-            backgroundColor: '#2196F3'
+            backgroundColor: '#2196F3',
+            height: 52
         },
         headerTitleStyle: {
             color: 'white'
         },
         headerLeft: <Image source={require('../assets/icon-guitar.png')} style={styles.imageStyle}/>,
-        headerRight: <TouchableHighlight
-        underlayColor={'#039be5'}
-            onPress={() => {console.log('pressed')}}>
-            <Image source={require('../assets/icon-settings.png')}
-                   style={{
-                       width: 30,
-                       height: 30,
-                       margin: 4,
-                       marginRight: 10,
-                       marginTop: 10,
-                       marginBottom: 12
-                   }}/>
-        </TouchableHighlight>
+        headerRight: <ViewSettingsButton />
     });
 
     async componentWillMount() {
@@ -75,6 +65,7 @@ class MainScreen extends Component {
 
         return (<View style={{flex: 1, backgroundColor: '#ddd'}}>
             <ChordsModal />
+            <SettingsModal />
 
             <View style={containerStyle}>
                 <KeysButtons/>

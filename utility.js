@@ -8,8 +8,8 @@ import {
     Platform,
 } from "react-native";
 
-const productIdRemoveAds = 'nicholaslie.mhwguidewiki.iap.removeads';
-const iapiOS = ['nicholaslie.monsterhunterworld.iap.removeads'];
+const productIdRemoveAds = 'nicholaslie.guitarcapohelper.iap.removeads';
+const iapiOS = ['nicholaslie.guitarcapohelper.iap.removeads'];
 
 let _ = require('lodash');
 
