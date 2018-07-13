@@ -4,5 +4,10 @@ This app is to help guitarist to play at the correct key when a person on their 
 
 Learned the tutorial from Barry Michael Doyle [here](https://www.youtube.com/channel/UCAo4vDfOoLoJkOMNZFjl1mA).
 
+## Privacy Policy
+
+This app will not store any data on any servers and it is completely offline.
+
 Download link in Google Play: (coming up)
+
 Download link the App Store: (coming up)
