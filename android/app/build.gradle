@@ -95,7 +95,6 @@ def enableProguardInReleaseBuilds = false
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
         applicationId "com.capokeys"
@@ -134,9 +133,12 @@ android {
             }
         }
     }
+    buildToolsVersion '27.0.3'
 }
 
 dependencies {
+    compile project(':react-native-billing')
+    compile project(':react-native-admob')
     compile project(':react-native-vector-icons')
     compile fileTree(dir: "libs", include: ["*.jar"])
     compile "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
