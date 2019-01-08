@@ -1,4 +1,4 @@
-package com.capokeys;
+package nicholaslie.guitarcapohelper;
 
 import android.app.Application;
 

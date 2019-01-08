@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "build:ios": "react-native bundle --entry-file='index.js' --bundle-output='./ios/CapoKeys/main.jsbundle' --dev=false --platform='ios' --assets-dest='./'",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },
@@ -12,6 +13,7 @@
     "react-native-admob": "^2.0.0-beta.5",
     "react-native-billing": "^2.9.1",
     "react-native-elements": "^0.19.1",
+    "react-native-in-app-utils": "^6.0.0",
     "react-native-vector-icons": "^4.6.0",
     "react-navigation": "^2.6.2",
     "react-redux": "^5.0.7",

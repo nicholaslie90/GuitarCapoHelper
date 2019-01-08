@@ -99,7 +99,7 @@ class SettingsModal extends Component {
                                 is playing with a capo, so you can play along.
                                 {"\n\n"}
 
-                                This app is built using React Native + Redux with the help of an excellent YouTube tutorial by Barry Michael Doyle. Go check out his videos!</Text>
+                                This app is built using React Native + Redux with the help of an excellent video tutorial by Barry Michael Doyle. Go check out his videos!</Text>
                         </View>
 
                         {/*Remove Ads*/}

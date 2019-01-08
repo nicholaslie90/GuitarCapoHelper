@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:CapoKeys.xcodeproj">
+      location = "group:/Users/nicholaslie/ReactNative/GuitarCapoHelper/ios/CapoKeys.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

@@ -11,6 +11,8 @@ target 'CapoKeys' do
   target 'CapoKeys-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'react-native-in-app-utils', :path => '../node_modules/react-native-in-app-utils'
+
   end
 
   target 'CapoKeysTests' do

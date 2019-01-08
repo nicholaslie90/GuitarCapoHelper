@@ -10,7 +10,7 @@ const InAppBilling = require("react-native-billing");
 
 class ChordsModal extends Component {
     state = {
-        showAds: true,
+        showAds: false,
     };
 
     async componentWillMount() {

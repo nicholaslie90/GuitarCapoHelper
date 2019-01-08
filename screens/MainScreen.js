@@ -15,7 +15,7 @@ const InAppBilling = require("react-native-billing");
 
 class MainScreen extends Component {
     state = {
-        showAds: true
+        showAds: false
     };
 
     static navigationOptions = () => ({

@@ -8,6 +8,6 @@ Learned the tutorial from Barry Michael Doyle [here](https://www.youtube.com/cha
 
 This app will not store any data on any servers and it is completely offline.
 
-Download link in Google Play: (coming up)
+Download link in Google Play: [https://play.google.com/store/apps/details?id=nicholaslie.guitarcapohelper](https://play.google.com/store/apps/details?id=nicholaslie.guitarcapohelper)
 
 Download link the App Store: (coming up)
